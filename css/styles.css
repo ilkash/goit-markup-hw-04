@@ -162,14 +162,16 @@ ul {
 
   width: auto;
 }
-
-.hero .title {
+.title-hero {
   margin-bottom: 48px;
   color: var(--color-giant);
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*button*/
@@ -394,8 +396,15 @@ ul {
   color: var(--color-giant);
 }
 .filtr .link {
+  display: block;
   text-decoration: none;
 }
+
+.filtr .link:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .filtr {
   display: flex;
   flex-wrap: wrap;
@@ -455,12 +464,16 @@ ul {
 }
 .klientu-list .li {
   box-sizing: border-box;
+}
+.icon-klientu {
+  width: 104px;
+  height: 56px;
+}
+.link-klientu {
   border-radius: 4px;
   border: 1px solid #8e8f99;
-
   width: 168px;
   height: 88px;
-
   display: flex;
 
   align-items: center;
@@ -469,15 +482,15 @@ ul {
   margin-right: auto;
   fill: #8e8f99;
 }
-.icon-klientu {
-  width: 104px;
-  height: 56px;
-}
-
-.klientu-list .li:hover,
-.klientu-list .li:focus {
+.link-klientu:hover,
+.link-klientu:focus {
   fill: var(--color-hover);
   border: 1px solid var(--color-hover);
+}
+
+.link-klientu:hover .icon,
+.link-klientu:focus .icon {
+  fill: var(--color-hover);
 }
 .footer-list-svg {
   display: flex;
