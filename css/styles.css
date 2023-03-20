@@ -144,41 +144,32 @@ ul {
   list-style: none;
 }
 
-.giant {
-  padding-bottom: 188px 0;
+.hero {
+  padding-bottom: 188px;
+  padding-top: 188px;
   text-align: center;
   background-color: var(--title_text-color);
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-.hero {
-  height: 600px;
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url("../images/peopleoffice.jpg");
+  max-width: 1440px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: auto;
 }
 
-.giant .title {
-  padding-top: 188px;
+.hero .title {
   margin-bottom: 48px;
-
   color: var(--color-giant);
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
-}
-.button.giant {
-  margin-bottom: 188px;
-  border-style: none;
-  cursor: pointer;
 }
 
 /*button*/
@@ -196,6 +187,11 @@ ul {
   letter-spacing: 0.04em;
 }
 
+.button.giant {
+  border-style: none;
+  cursor: pointer;
+  background-color: var(--accent-color);
+}
 .button:hover,
 .button:focus {
   background-color: var(--color-hover);
@@ -331,6 +327,9 @@ ul {
   padding-bottom: 100px;
   background-color: var(--title_text-color);
 }
+.media {
+  width: 208px;
+}
 .f-web {
   margin-right: 120px;
 }
@@ -424,28 +423,22 @@ ul {
   margin-bottom: 0;
 }
 
-.icon {
-  height: 16px;
-  width: 16px;
-}
-.inst-t {
-  background-color: rgba(0, 0, 0, 0);
-  fill: var(--bgcolor-button);
-}
-
-.f-in {
-  background-color: rgba(0, 0, 0, 0);
-}
 .a-svg {
-  display: block;
-  background-color: aqua;
+  display: flex;
+  background-color: var(--accent-color);
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  padding: 12px;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
+.a-svg:hover,
+.a-svg:focus {
+  background-color: var(--color-hover);
+}
+
 .list-svg {
   display: flex;
   justify-content: center;
@@ -467,14 +460,49 @@ ul {
 
   width: 168px;
   height: 88px;
-  padding: 16px 32px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  fill: #8e8f99;
 }
 .icon-klientu {
   width: 104px;
   height: 56px;
 }
+
+.klientu-list .li:hover,
+.klientu-list .li:focus {
+  fill: var(--color-hover);
+  border: 1px solid var(--color-hover);
+}
 .footer-list-svg {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 16px;
+}
+.media-p {
+  color: var(--color-giant);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.a-svg-f {
+  display: flex;
+
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.a-svg-f:hover,
+.a-svg-f:focus {
+  background-color: #31d0aa;
 }
